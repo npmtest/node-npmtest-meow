@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-meow/meow/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-meow/node_modules/meow/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-meow">npmtest-meow (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-meow/meow/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-meow/node_modules/meow/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">32.56% <small>(14 / 43)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-meow/meow/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-meow/node_modules/meow/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -298,23 +296,23 @@
 82
 83
 84</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -397,14 +395,14 @@ var normalizePackageData = require('normalize-package-data');
 delete require.cache[__filename];
 var parentDir = path.dirname(module.parent.filename);
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function (opts, minimistOpts) {</span>
-<span class="cstat-no" title="statement not covered" >	loudRejection();</span>
+module.exports = <span class="fstat-no" title="function not covered">function (opts, minimistOpts) {</span>
+<span class="cstat-no" title="statement not covered">	loudRejection();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (Array.isArray(opts) || typeof opts === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >		opts = {help: opts};</span>
+<span class="cstat-no" title="statement not covered">	if (Array.isArray(opts) || typeof opts === 'string') {</span>
+<span class="cstat-no" title="statement not covered">		opts = {help: opts};</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	opts = objectAssign({</span>
+<span class="cstat-no" title="statement not covered">	opts = objectAssign({</span>
 		pkg: readPkgUp.sync({
 			cwd: parentDir,
 			normalize: false
@@ -412,49 +410,49 @@ module.exports = <span class="fstat-no" title="function not covered" >function (
 		argv: process.argv.slice(2)
 	}, opts);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	minimistOpts = objectAssign({}, minimistOpts);</span>
+<span class="cstat-no" title="statement not covered">	minimistOpts = objectAssign({}, minimistOpts);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	minimistOpts.default = mapObj(minimistOpts.default || {}, <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >		return [decamelize(key, '-'), value];</span>
+<span class="cstat-no" title="statement not covered">	minimistOpts.default = mapObj(minimistOpts.default || {}, <span class="fstat-no" title="function not covered">function (key, value) {</span></span>
+<span class="cstat-no" title="statement not covered">		return [decamelize(key, '-'), value];</span>
 	});
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (Array.isArray(opts.help)) {</span>
-<span class="cstat-no" title="statement not covered" >		opts.help = opts.help.join('\n');</span>
+<span class="cstat-no" title="statement not covered">	if (Array.isArray(opts.help)) {</span>
+<span class="cstat-no" title="statement not covered">		opts.help = opts.help.join('\n');</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var pkg = typeof opts.pkg === 'string' ? require(path.join(parentDir, opts.pkg)) : opts.pkg;</span>
-<span class="cstat-no" title="statement not covered" >	var argv = minimist(opts.argv, minimistOpts);</span>
-<span class="cstat-no" title="statement not covered" >	var help = redent(trimNewlines(opts.help || ''), 2);</span>
+<span class="cstat-no" title="statement not covered">	var pkg = typeof opts.pkg === 'string' ? require(path.join(parentDir, opts.pkg)) : opts.pkg;</span>
+<span class="cstat-no" title="statement not covered">	var argv = minimist(opts.argv, minimistOpts);</span>
+<span class="cstat-no" title="statement not covered">	var help = redent(trimNewlines(opts.help || ''), 2);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	normalizePackageData(pkg);</span>
+<span class="cstat-no" title="statement not covered">	normalizePackageData(pkg);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	process.title = pkg.bin ? Object.keys(pkg.bin)[0] : pkg.name;</span>
+<span class="cstat-no" title="statement not covered">	process.title = pkg.bin ? Object.keys(pkg.bin)[0] : pkg.name;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var description = opts.description;</span>
-<span class="cstat-no" title="statement not covered" >	if (!description &amp;&amp; description !== false) {</span>
-<span class="cstat-no" title="statement not covered" >		description = pkg.description;</span>
+<span class="cstat-no" title="statement not covered">	var description = opts.description;</span>
+<span class="cstat-no" title="statement not covered">	if (!description &amp;&amp; description !== false) {</span>
+<span class="cstat-no" title="statement not covered">		description = pkg.description;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	help = (description ? '\n  ' + description + '\n' : '') + (help ? '\n' + help : '\n');</span>
+<span class="cstat-no" title="statement not covered">	help = (description ? '\n  ' + description + '\n' : '') + (help ? '\n' + help : '\n');</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var showHelp = <span class="fstat-no" title="function not covered" >function (code) {</span></span>
-<span class="cstat-no" title="statement not covered" >		console.log(help);</span>
-<span class="cstat-no" title="statement not covered" >		process.exit(code || 0);</span>
+<span class="cstat-no" title="statement not covered">	var showHelp = <span class="fstat-no" title="function not covered">function (code) {</span></span>
+<span class="cstat-no" title="statement not covered">		console.log(help);</span>
+<span class="cstat-no" title="statement not covered">		process.exit(code || 0);</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (argv.version &amp;&amp; opts.version !== false) {</span>
-<span class="cstat-no" title="statement not covered" >		console.log(typeof opts.version === 'string' ? opts.version : pkg.version);</span>
-<span class="cstat-no" title="statement not covered" >		process.exit();</span>
+<span class="cstat-no" title="statement not covered">	if (argv.version &amp;&amp; opts.version !== false) {</span>
+<span class="cstat-no" title="statement not covered">		console.log(typeof opts.version === 'string' ? opts.version : pkg.version);</span>
+<span class="cstat-no" title="statement not covered">		process.exit();</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (argv.help &amp;&amp; opts.help !== false) {</span>
-<span class="cstat-no" title="statement not covered" >		showHelp();</span>
+<span class="cstat-no" title="statement not covered">	if (argv.help &amp;&amp; opts.help !== false) {</span>
+<span class="cstat-no" title="statement not covered">		showHelp();</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var _ = argv._;</span>
-<span class="cstat-no" title="statement not covered" >	delete argv._;</span>
+<span class="cstat-no" title="statement not covered">	var _ = argv._;</span>
+<span class="cstat-no" title="statement not covered">	delete argv._;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	return {</span>
+<span class="cstat-no" title="statement not covered">	return {</span>
 		input: _,
 		flags: camelcaseKeys(argv),
 		pkg: pkg,
@@ -464,10 +462,11 @@ module.exports = <span class="fstat-no" title="function not covered" >function (
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 11:53:32 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 17:02:13 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
