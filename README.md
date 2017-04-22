@@ -1,4 +1,7 @@
-# test coverage for  [meow (v3.7.0)](https://github.com/sindresorhus/meow#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-meow.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-meow) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-meow.svg)](https://travis-ci.org/npmtest/node-npmtest-meow)
+# npmtest-meow
+
+#### basic test coverage for  [meow (v3.7.0)](https://github.com/sindresorhus/meow#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-meow.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-meow) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-meow.svg)](https://travis-ci.org/npmtest/node-npmtest-meow)
+
 #### CLI app helper
 
 [![NPM](https://nodei.co/npm/meow.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/meow)
@@ -105,7 +108,8 @@
     "scripts": {
         "test": "xo && ava"
     },
-    "version": "3.7.0"
+    "version": "3.7.0",
+    "bin": {}
 }
 ```
 
